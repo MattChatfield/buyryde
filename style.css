@@ -35,7 +35,7 @@ h2 { font-size: 2.2rem; margin-bottom: 2rem; text-align: center; }
 .hero {
     height: 70vh;
     /* In style.css, inside the .hero selector */
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1513584685908-95c9e12066eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
+background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -97,4 +97,5 @@ th { color: var(--primary); width: 40%; }
     .contact-methods { flex-direction: column; gap: 1.5rem; }
 
 }
+
 
