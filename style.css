@@ -34,8 +34,7 @@ h2 { font-size: 2.2rem; margin-bottom: 2rem; text-align: center; }
 /* Hero Section */
 .hero {
     height: 70vh;
-    /* In style.css, inside the .hero selector */
-background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('file://///wsl$/Ubuntu-22.04/home/mattchat/projects/buyryde/images/Level-Ryde-1.JPG');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -95,8 +94,4 @@ th { color: var(--primary); width: 40%; }
     .hero h1 { font-size: 2rem; }
     .hero { height: 60vh; }
     .contact-methods { flex-direction: column; gap: 1.5rem; }
-
 }
-
-
-
