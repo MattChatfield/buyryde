@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <title>Buy Ryde | Commercial Premises for Sale</title>
     <meta name="description" content="Prime commercial freehold for sale in Ryde, Isle of Wight. #### sq ft, prime location.">
     <link rel="stylesheet" href="style.css">
@@ -77,18 +78,51 @@
         <div class="container">
             <h2>Gallery</h2>
             <p class="note">Iamges of the property, plus views from the windows. Yes, there is a sea view!</p>
-            <div class="gallery-grid">
-                <img src="images/Level-Ryde-11.JPG" alt="Exterior View 1">
-                <img src="images/Level-Ryde-2.JPG" alt="Exterior View 2">
-                <img src="images/Level-Ryde-3.JPG" alt="Exterior View">
-				<img src="images/Level-Ryde-4.JPG" alt="Interior View">
-				<img src="images/Level-Ryde-5.JPG" alt="Interior View">
-				<img src="images/Level-Ryde-6.JPG" alt="Interior View">
-				<img src="images/Level-Ryde-7.JPG" alt="Interior View">
-				<img src="images/Level-Ryde-8.JPG" alt="Interior View">
-				<img src="images/Level-Ryde-9.JPG" alt="View down Union Street">
-				<img src="images/Level-Ryde-10.JPG" alt="View of St Thomas' Square">
-            </div>
+            <div class="gallery-grid" id="gallery-grid">
+    <a href="images/Level-Ryde-1.JPG" data-caption="Property View 1">
+        <img src="images/Level-Ryde-1.JPG" alt="Property View 1">
+    </a>
+
+    <a href="images/Level-Ryde-2.JPG" data-caption="Exterior View">
+        <img src="images/Level-Ryde-2.JPG" alt="Exterior View">
+    </a>
+
+    <a href="images/Level-Ryde-3.JPG" data-caption="Exterior View">
+        <img src="images/Level-Ryde-3.JPG" alt="Exterior View">
+    </a>
+
+    <a href="images/Level-Ryde-4.JPG" data-caption="Interior View">
+        <img src="images/Level-Ryde-4.JPG" alt="Interior View">
+    </a>
+
+    <a href="images/Level-Ryde-5.JPG" data-caption="Exterior View">
+        <img src="images/Level-Ryde-5.JPG" alt="Exterior View">
+    </a>
+
+    <a href="images/Level-Ryde-6.JPG" data-caption="Exterior View">
+        <img src="images/Level-Ryde-6.JPG" alt="Exterior View">
+    </a>
+
+    <a href="images/Level-Ryde-7.JPG" data-caption="Exterior View">
+        <img src="images/Level-Ryde-7.JPG" alt="Exterior View">
+    </a>
+
+    <a href="images/Level-Ryde-8.JPG" data-caption="Exterior View">
+        <img src="images/Level-Ryde-8.JPG" alt="Exterior View">
+    </a>
+
+    <a href="images/Level-Ryde-9.JPG" data-caption="Exterior View">
+        <img src="images/Level-Ryde-9.JPG" alt="Exterior View">
+    </a>
+
+    <a href="images/Level-Ryde-10.JPG" data-caption="Exterior View">
+        <img src="images/Level-Ryde-10.JPG" alt="Exterior View">
+    </a>
+
+    <a href="images/Level-Ryde-11.JPG" data-caption="Exterior View">
+        <img src="images/Level-Ryde-11.JPG" alt="Exterior View">
+    </a>
+</div>
         </div>
     </section>
 
@@ -137,8 +171,18 @@
         </div>
     </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    
+    <script>
+        window.addEventListener('load', function() {
+            baguetteBox.run('.gallery-grid', {
+                animation: 'fadeIn',
+                noScrollbars: true
+            });
+        });
+    </script>
 </body>
-
 </html>
+
 
 
