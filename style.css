@@ -68,9 +68,6 @@ th { color: var(--primary); width: 40%; }
 /* Target the links wrapping the images */
 .gallery-grid a {
     display: block;
-    /* This changes the cursor to a magnifying glass with a plus sign */
-    cursor: zoom-in; 
-    
     /* Smooth transition for the hover animation */
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -79,6 +76,8 @@ th { color: var(--primary); width: 40%; }
 .gallery-grid a:hover {
     transform: scale(1.02); /* Expands the image slightly */
     opacity: 0.9;           /* Slight fade to indicate interaction */
+        /* This changes the cursor to a magnifying glass with a plus sign */
+    cursor: zoom-in; 
 }
 
 /* Contact Section (New Static Styles) */
@@ -110,6 +109,7 @@ th { color: var(--primary); width: 40%; }
     .hero { height: 60vh; }
     .contact-methods { flex-direction: column; gap: 1.5rem; }
 }
+
 
 
 
