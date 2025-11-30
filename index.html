@@ -258,7 +258,7 @@
 	// Leaflet code: Get the map container div
 	var map = L.map('map').setView([50.729909, -1.162896], 17); 
 
-	L.tileLayer('https://maps.geoapify.com/v1/tile/osm-bright-grey/{z}/{x}/{y}.png?&apiKey=9bb19cd56ec24b14806741a0a808625b', {
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 22,
 		attribution: '© OpenStreetMap contributors'
 	}).addTo(map);
