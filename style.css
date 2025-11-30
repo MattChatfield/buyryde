@@ -111,7 +111,13 @@ th { color: var(--primary); width: 40%; }
     cursor: zoom-in; 
 }
 
-/* Contact Section (New Static Styles) */
+/* Map Section */
+#map { 
+	height: 400px; 
+	width: 100%;
+}
+
+/* Contact Section */
 .contact-card {
     max-width: 700px;
     margin: 0 auto;
@@ -180,6 +186,11 @@ th { color: var(--primary); width: 40%; }
 .top-btn.show {
     display: flex;
     opacity: 0.7;
+}
+
+.smallprint {
+font-size: small;
+color: --light;
 }
 
 /* Mobile Tweaks */

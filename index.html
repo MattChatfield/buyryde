@@ -8,8 +8,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <title>Buy Ryde | Commercial Premises for Sale</title>
-    <meta name="description" content="Prime commercial freehold for sale in Ryde, Isle of Wight. #### sq ft, prime location.">
+    <meta name="description" content="Prime commercial property for sale in Ryde, Isle of Wight. #### sq ft, town centre location.">
+	<meta name="author" content="Pinkeye Graphics Ltd">
     <link rel="stylesheet" href="style.css">
+	<!-- Leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+	 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+	<!-- /Leaflet -->	 
 </head>
 <body id="top">
 
@@ -160,18 +167,10 @@
     <section id="location" class="section">
         <div class="container">
             <h2>Property Location</h2>
-            <p>4 St Thomas' Square, Ryde PO33 2PJ.</p>
-            <div class="map-container">
- 
-<iframe width="100%" 
-                    height="400" 
-                    frameborder="0" 
-                    scrolling="no" 
-                    marginheight="0" 
-                    marginwidth="0" 
-                    title="Map of Ryde" src="https://www.openstreetmap.org/export/embed.html?bbox=-1.1648377776145937%2C50.72911440354125%2C-1.1609539389610293%2C50.730703522036784&amp;layer=hot&amp;marker=50.72990896952731%2C-1.1628958582878113"  style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/?#map=19/50.729909/-1.162896">View Larger Map</a></small>
-	            </div>
-        </div>
+            <p><a href="https://www.openstreetmap.org/?#map=19/50.729909/-1.162896">4 St Thomas' Square, Ryde PO33 2PJ.</a></p>
+			<div id="map"></div>	
+		</div>
+		
     </section>
 
     <section id="contact" class="section bg-dark">
@@ -198,7 +197,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Buy Ryde. All rights reserved.</p>
+            <p class="smallprint">&copy; 2025 Buy Ryde. All rights reserved. Map &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>.</p>
         </div>
     </footer>
 
@@ -210,8 +209,7 @@
             animation: 'fadeIn',
             noScrollbars: true
         });
-
-        // --- ADD MOBILE MENU TOGGLE CODE HERE ---
+ 
         const hamburger = document.getElementById('hamburger');
         const navMenu = document.getElementById('navMenu');
 
@@ -227,9 +225,7 @@
                 }
             });
         });
-        // --- END MOBILE MENU TOGGLE CODE ---
 		
-		// --- ADD BACK TO TOP BUTTON LOGIC ---
         const backToTopButton = document.getElementById('backToTopBtn');
         
         // When the user scrolls down 200px from the top, show the button
@@ -250,6 +246,18 @@
         });
         // --- END BACK TO TOP BUTTON LOGIC ---
     });
+
+	// Leaflet code: Get the map container div
+	var map = L.map('map').setView([50.729909, -1.162896], 17); 
+
+	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+		maxZoom: 19,
+		attribution: '© OpenStreetMap contributors'
+	}).addTo(map);
+
+	var marker = L.marker([50.729909, -1.162896]).addTo(map);
+
+	marker.bindPopup("<b>4 St Thomas' Square</b><br>Prime Ryde commercial property opportunity.");
 </script>
 
 <button id="backToTopBtn" class="top-btn" title="Go to top">
