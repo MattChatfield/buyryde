@@ -17,13 +17,18 @@
         <div class="container nav-flex">
             <div class="logo"><a href="#top">Buy Ryde</a></div>
             <nav>
-                <ul class="nav-links">
+                <ul class="nav-links" id="navMenu">
                     <li><a href="#details">Details</a></li>
                     <li><a href="#gallery">Gallery</a></li>
 					<li><a href="#ryde">Ryde</a></li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#contact" class="btn-nav">Contact</a></li>
                 </ul>
+				<div class="hamburger" id="hamburger"> 
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+				</div>
             </nav>
         </div>
     </header>
@@ -199,14 +204,32 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
     
-    <script>
-        window.addEventListener('load', function() {
-            baguetteBox.run('.gallery-grid', {
-                animation: 'fadeIn',
-                noScrollbars: true
+<script>
+    window.addEventListener('load', function() {
+        baguetteBox.run('.gallery-grid', {
+            animation: 'fadeIn',
+            noScrollbars: true
+        });
+
+        // --- ADD MOBILE MENU TOGGLE CODE HERE ---
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked (for better UX on mobile)
+        document.querySelectorAll('#navMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                }
             });
         });
-    </script>
+        // --- END MOBILE MENU TOGGLE CODE ---
+    });
+</script>
 </body>
 </html>
 

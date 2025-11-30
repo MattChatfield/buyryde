@@ -133,12 +133,60 @@ th { color: var(--primary); width: 40%; }
 .method a:hover { color: var(--accent); text-decoration: underline; }
 .agent-note { margin-top: 2rem; font-size: 0.9rem; opacity: 0.8; }
 
+/* Hamburger Icon Styling */
+.hamburger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    padding: 10px;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: var(--primary);
+    transition: all 0.3s ease-in-out;
+}
+
 /* Mobile Tweaks */
 @media (max-width: 768px) {
-    .nav-links { display: none; } 
+    /* .nav-links { display: none; }  */
     .hero h1 { font-size: 2rem; }
     .hero { height: 60vh; }
     .contact-methods { flex-direction: column; gap: 1.5rem; }
+
+.hamburger {
+        display: block; 
+    }
+    
+    /* SET the default (CLOSED) state for the menu */
+    .nav-links {
+        /* Position menu off-screen initially */
+        position: absolute;
+        top: 100%; /* Below the header */
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        flex-direction: column; /* Stack links vertically */
+        align-items: center;
+        padding: 10px 0;
+        gap: 0;
+        /* Default state is hidden */
+        transform: translateY(-200%); /* Move far up */
+        transition: transform 0.4s ease-in-out;
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+        border-bottom: 1px solid var(--light);
+    }
+
+    /* DEFINE the OPEN state class */
+    .nav-links.active {
+        transform: translateY(0); /* Slide into view */
+    }
 }
 
 
