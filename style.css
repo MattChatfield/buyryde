@@ -189,7 +189,7 @@ th { color: var(--primary); width: 40%; }
 }
 
 .smallprint {
-font-size: small;
+font-size: 9px;
 color: --light;
 }
 

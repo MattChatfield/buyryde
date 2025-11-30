@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+	
     <title>Buy Ryde | Commercial Premises for Sale</title>
     <meta name="description" content="Prime commercial property for sale in Ryde, Isle of Wight. #### sq ft, town centre location.">
 	<meta name="author" content="Pinkeye Graphics Ltd">
@@ -197,7 +198,8 @@
 
     <footer>
         <div class="container">
-            <p class="smallprint">&copy; 2025 Buy Ryde. All rights reserved. Map &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>.</p>
+            <p class="smallprint">&copy; <span id="currentYear"></span> Buy Ryde. All rights reserved.<br/>
+			Map: &copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>
         </div>
     </footer>
 
@@ -250,14 +252,24 @@
 	// Leaflet code: Get the map container div
 	var map = L.map('map').setView([50.729909, -1.162896], 17); 
 
-	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 19,
+	L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}.png', {
+		maxZoom: 22,
 		attribution: '© OpenStreetMap contributors'
 	}).addTo(map);
 
 	var marker = L.marker([50.729909, -1.162896]).addTo(map);
 
-	marker.bindPopup("<b>4 St Thomas' Square</b><br>Prime Ryde commercial property opportunity.");
+	marker.bindPopup("<b><a href='https://www.openstreetmap.org/?#map=19/50.729909/-1.162896'>4 St Thomas' Square, Ryde PO33 2PJ.</a></b><br>Prime Ryde commercial property opportunity.");
+	
+	// --- ADD CURRENT YEAR INJECTION HERE ---
+        const yearSpan = document.getElementById('currentYear');
+        if (yearSpan) {
+            // Get the current date and extract the four-digit year
+            const currentYear = new Date().getFullYear();
+            // Insert the year into the span
+            yearSpan.textContent = currentYear;
+        }
+        // --- END CURRENT YEAR INJECTION ---
 </script>
 
 <button id="backToTopBtn" class="top-btn" title="Go to top">
