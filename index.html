@@ -1,30 +1,117 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
-	<link rel="icon" type="image/png" href="/iconography/favicon-96x96.png" sizes="96x96" />
-	<link rel="icon" type="image/svg+xml" href="/iconography/favicon.svg" />
-	<link rel="shortcut icon" href="/iconography/favicon.ico" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/iconography/apple-touch-icon.png" />
-	<meta name="apple-mobile-web-app-title" content="Buy Ryde" />
-	<link rel="manifest" href="/iconography/site.webmanifest" />
-	
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Montserrat:wght@700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="icon" type="image/png" href="/iconography/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/iconography/favicon.svg" />
+    <link rel="shortcut icon" href="/iconography/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/iconography/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Buy Ryde" />
+    <link rel="manifest" href="/iconography/site.webmanifest" />
+
     <title>Buy Ryde | Commercial Premises for Sale</title>
-    <meta name="description" content="Prime commercial property for sale in Ryde, Isle of Wight. #### sq ft, town centre location.">
-	<meta name="author" content="Pinkeye Graphics Ltd">
+    <meta name="description"
+        content="Prime commercial property for sale or lease in Ryde, Isle of Wight. Town centre location.">
+    <link rel="canonical" href="https://buyryde.co.uk/">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+                {
+                    "@type": "LocalBusiness",
+                    "@id": "https://buyryde.co.uk/#localbusiness",
+                    "name": "Buy Ryde",
+                    "url": "https://buyryde.co.uk/",
+                    "email": "enquiries@buyryde.co.uk",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4 St Thomas' Square",
+                        "addressLocality": "Ryde",
+                        "postalCode": "PO33 2PJ",
+                        "addressRegion": "Isle of Wight",
+                        "addressCountry": "GB"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 50.729909,
+                        "longitude": -1.162896
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "@id": "https://buyryde.co.uk/#offer-sale",
+                    "businessFunction": "https://purl.org/goodrelations/v1#Sell",
+                    "price": "199950",
+                    "priceCurrency": "GBP",
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/UsedCondition"
+                },
+                {
+                    "@type": "Offer",
+                    "@id": "https://buyryde.co.uk/#offer-rental",
+                    "businessFunction": "https://purl.org/goodrelations/v1#LeaseOut",
+                    "price": "13000",
+                    "priceCurrency": "GBP",
+                    "priceSpecification": {
+                        "@type": "UnitPriceSpecification",
+                        "price": "13000",
+                        "priceCurrency": "GBP",
+                        "unitText": "YEAR"
+                    },
+                    "availability": "https://schema.org/InStock",
+                    "itemCondition": "https://schema.org/UsedCondition"
+                },
+                {
+                    "@type": "RealEstateListing",
+                    "@id": "https://buyryde.co.uk/#listing",
+                    "name": "Commercial Premises at 4 St Thomas' Square, Ryde",
+                    "description": "Prime commercial property for sale or lease in Ryde, Isle of Wight. Town centre location.",
+                    "url": "https://buyryde.co.uk/",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "4 St Thomas' Square",
+                        "addressLocality": "Ryde",
+                        "postalCode": "PO33 2PJ",
+                        "addressRegion": "Isle of Wight",
+                        "addressCountry": "GB"
+                    },
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 50.729909,
+                        "longitude": -1.162896
+                    },
+                    "offers": [
+                        {
+                            "@id": "https://buyryde.co.uk/#offer-sale"
+                        },
+                        {
+                            "@id": "https://buyryde.co.uk/#offer-rental"
+                        }
+                    ],
+                    "seller": {
+                        "@id": "https://buyryde.co.uk/#localbusiness"
+                    }
+                }
+            ]
+        }
+        </script>
+    <meta name="author" content="Pinkeye Graphics Ltd">
     <link rel="stylesheet" href="style.css">
-	<!-- Leaflet -->
-	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
-	 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-     crossorigin=""></script>
-	<!-- /Leaflet -->	 
+    <!-- Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <!-- /Leaflet -->
 </head>
+
 <body id="top">
 
     <header class="header">
@@ -34,15 +121,15 @@
                 <ul class="nav-links" id="navMenu">
                     <li><a href="#details">Details</a></li>
                     <li><a href="#gallery">Gallery</a></li>
-					<li><a href="#ryde">Ryde</a></li>
+                    <li><a href="#ryde">Ryde</a></li>
                     <li><a href="#location">Location</a></li>
                     <li><a href="#contact" class="btn-nav">Contact</a></li>
                 </ul>
-				<div class="hamburger" id="hamburger"> 
-					<span class="bar"></span>
-					<span class="bar"></span>
-					<span class="bar"></span>
-				</div>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </div>
     </header>
@@ -67,14 +154,17 @@
                 </div>
                 <div class="feature-card">
                     <h3>Location</h3>
-                    <p>Situated in St Thomas' Square, at the very top of Union Street, the primary thoroughfare from the Esplanade to the High Street. A high footfall site which is arguably in one of the most prominent commercial locations on the Isle of Wight.</p>
+                    <p>Situated in St Thomas' Square, at the very top of Union Street, the primary thoroughfare from the
+                        Esplanade to the High Street. A high footfall site which is arguably in one of the most
+                        prominent commercial locations on the Isle of Wight.</p>
                 </div>
                 <div class="feature-card">
                     <h3>Potential</h3>
-                    <p>Class E usage. Ideal for retail, restaurant, or professional services. Potential for upper-floor residential conversion (STPP).</p>
+                    <p>Class E usage. Ideal for retail, restaurant, or professional services. Potential for upper-floor
+                        residential conversion (STPP).</p>
                 </div>
             </div>
-            
+
             <div class="specs-table">
                 <table>
                     <tr>
@@ -99,82 +189,103 @@
             <h2>Gallery</h2>
             <p class="note">Images of the property, plus views from the windows. Yes, there are sea views!</p>
             <div class="gallery-grid" id="gallery-grid">
-    <a href="images/Level-Ryde-1.JPG" data-caption="Overall view of the property frontage">
-        <img src="images/Level-Ryde-1.JPG" alt="Overall view of the property frontage">
-    </a>
+                <a href="images/Level-Ryde-1.JPG" data-caption="Overall view of the property frontage">
+                    <img src="images/Level-Ryde-1.JPG" alt="Overall view of the property frontage">
+                </a>
 
-    <a href="images/Level-Ryde-2.JPG" data-caption="Exterior View">
-        <img src="images/Level-Ryde-2.JPG" alt="Exterior View">
-    </a>
+                <a href="images/Level-Ryde-2.JPG" data-caption="Exterior View">
+                    <img src="images/Level-Ryde-2.JPG" alt="Exterior View">
+                </a>
 
-    <a href="images/Level-Ryde-3.JPG" data-caption="View down Union Street from street level">
-        <img src="images/Level-Ryde-3.JPG" alt="View down Union Street from street level">
-    </a>
+                <a href="images/Level-Ryde-3.JPG" data-caption="View down Union Street from street level">
+                    <img src="images/Level-Ryde-3.JPG" alt="View down Union Street from street level">
+                </a>
 
-    <a href="images/Level-Ryde-4.JPG" data-caption="Interior view ground floor">
-        <img src="images/Level-Ryde-4.JPG" alt="Interior view ground floor">
-    </a>
+                <a href="images/Level-Ryde-4.JPG" data-caption="Interior view ground floor">
+                    <img src="images/Level-Ryde-4.JPG" alt="Interior view ground floor">
+                </a>
 
-    <a href="images/Level-Ryde-5.JPG" data-caption="Interior view ground floor">
-        <img src="images/Level-Ryde-5.JPG" alt="Interior view ground floor">
-    </a>
+                <a href="images/Level-Ryde-5.JPG" data-caption="Interior view ground floor">
+                    <img src="images/Level-Ryde-5.JPG" alt="Interior view ground floor">
+                </a>
 
-    <a href="images/Level-Ryde-6.JPG" data-caption="Interior view first floor">
-        <img src="images/Level-Ryde-6.JPG" alt="Interior view first floor">
-    </a>
+                <a href="images/Level-Ryde-6.JPG" data-caption="Interior view first floor">
+                    <img src="images/Level-Ryde-6.JPG" alt="Interior view first floor">
+                </a>
 
-    <a href="images/Level-Ryde-7.JPG" data-caption="Interior view first floor">
-        <img src="images/Level-Ryde-7.JPG" alt="Interior view first floor">
-    </a>
+                <a href="images/Level-Ryde-7.JPG" data-caption="Interior view first floor">
+                    <img src="images/Level-Ryde-7.JPG" alt="Interior view first floor">
+                </a>
 
-    <a href="images/Level-Ryde-8.JPG" data-caption="Interior view first floor">
-        <img src="images/Level-Ryde-8.JPG" alt="Interior view first floor">
-    </a>
+                <a href="images/Level-Ryde-8.JPG" data-caption="Interior view first floor">
+                    <img src="images/Level-Ryde-8.JPG" alt="Interior view first floor">
+                </a>
 
-    <a href="images/Level-Ryde-9.JPG" data-caption="View from the first floor window">
-        <img src="images/Level-Ryde-9.JPG" alt="View from the first floor window">
-    </a>
+                <a href="images/Level-Ryde-9.JPG" data-caption="View from the first floor window">
+                    <img src="images/Level-Ryde-9.JPG" alt="View from the first floor window">
+                </a>
 
-    <a href="images/Level-Ryde-10.JPG" data-caption="View from the first floor window">
-        <img src="images/Level-Ryde-10.JPG" alt="View from the first floor window">
-    </a>
+                <a href="images/Level-Ryde-10.JPG" data-caption="View from the first floor window">
+                    <img src="images/Level-Ryde-10.JPG" alt="View from the first floor window">
+                </a>
 
-    <a href="images/Level-Ryde-11.JPG" data-caption="Exterior View">
-        <img src="images/Level-Ryde-11.JPG" alt="Exterior View">
-    </a>
-</div>
+                <a href="images/Level-Ryde-11.JPG" data-caption="Exterior View">
+                    <img src="images/Level-Ryde-11.JPG" alt="Exterior View">
+                </a>
+            </div>
         </div>
     </section>
 
-<section id="ryde" class="section">
+    <section id="ryde" class="section">
         <div class="container">
             <h2>About Ryde</h2>
-  <p>
-    This is a rare opportunity to acquire a former salon in the beating heart of the Isle of Wight's largest town and long-established commercial centre. Ryde benefits from strong local trade plus a seasonal influx of visitors arriving by fast catamaran and hovercraft, which boosts footfall along the High Street, Union Street and the Esplanade.
-  </p>
+            <p>
+                This is a rare opportunity to acquire a former salon in the beating heart of the Isle of Wight's largest
+                town and long-established commercial centre. Ryde benefits from strong local trade plus a seasonal
+                influx of visitors arriving by fast catamaran and hovercraft, which boosts footfall along the High
+                Street, Union Street and the Esplanade.
+            </p>
 
-  <p>
-    The town is seeing <a href="https://iwhaz.uk/town/ryde/" target="_blank" rel="noopener">heritage-led regeneration</a> to enhance its historic core and make the high street more attractive to retail, leisure and hospitality businesses. Nationally-funded initiatives targeted at improving shopfronts, restoring buildings and upgrading the public realm are helping to create an environment where new businesses can thrive.
-  </p>
+            <p>
+                The town is seeing <a href="https://iwhaz.uk/town/ryde/" target="_blank" rel="noopener">heritage-led
+                    regeneration</a> to enhance its historic core and make the high street more attractive to retail,
+                leisure and hospitality businesses. Nationally-funded initiatives targeted at improving shopfronts,
+                restoring buildings and upgrading the public realm are helping to create an environment where new
+                businesses can thrive.
+            </p>
 
-  <p>
-    Ryde's retail mix - national names alongside a lively independent sector of boutiques, cafés and specialist shops - gives a town-centre unit excellent potential whether you're planning a retail store, café/restaurant or mixed-use business. For a broader view of Ryde as a shopping and visitor destination, see this overview: <a href="https://www.visitisleofwight.co.uk/explore/towns/ryde" target="_blank" rel="noopener">Isle of Wight — shopping & visitor guide</a>.
-  </p>
+            <p>
+                Ryde's retail mix - national names alongside a lively independent sector of boutiques, cafés and
+                specialist shops - gives a town-centre unit excellent potential whether you're planning a retail store,
+                café/restaurant or mixed-use business. For a broader view of Ryde as a shopping and visitor destination,
+                see this overview: <a href="https://www.visitisleofwight.co.uk/explore/towns/ryde" target="_blank"
+                    rel="noopener">Isle of Wight — shopping & visitor guide</a>.
+            </p>
 
-  <p>
-    In short: a centrally located, flexible premises in Ryde offers both immediate trading potential and the opportunity to benefit from ongoing town-centre improvements — an attractive proposition for investors, business owners and entrepreneurs alike.
-  </p>
-  </div>
-</section>
+            <p>
+                In short: a centrally located, flexible premises in Ryde offers both immediate trading potential and the
+                opportunity to benefit from ongoing town-centre improvements — an attractive proposition for investors,
+                business owners and entrepreneurs alike.
+            </p>
+        </div>
+    </section>
 
 
     <section id="location" class="section">
         <div class="container">
             <h2>Property Location</h2>
-            <p><a href="https://www.openstreetmap.org/?#map=19/50.729909/-1.162896">4 St Thomas' Square, Ryde PO33 2PJ.</a></p>
-			<div id="map"></div>	
-		</div>
-		
+            <p><a href="https://www.openstreetmap.org/?#map=19/50.729909/-1.162896">4 St Thomas' Square, Ryde PO33
+                    2PJ.</a></p>
+            <div id="map" aria-label="Map showing 4 St Thomas' Square, Ryde PO33 2PJ"
+                title="Map showing 4 St Thomas' Square, Ryde PO33 2PJ"></div>
+            <noscript>
+                <p>
+                    JavaScript is disabled. View the property location on
+                    <a href="https://www.openstreetmap.org/?#map=19/50.729909/-1.162896">OpenStreetMap</a>.
+                </p>
+            </noscript>
+        </div>
+
     </section>
 
     <section id="contact" class="section bg-dark">
@@ -182,14 +293,14 @@
             <h2>Enquiries</h2>
             <div class="contact-card">
                 <p>Viewings are strictly by appointment only.</p>
-                
+
                 <div class="contact-methods">
                     <div class="method">
                         <h3>Email</h3>
                         <p><a href="mailto:enquiries@buyryde.co.uk">enquiries@buyryde.co.uk</a></p>
                     </div>
                 </div>
-             
+
 
             </div>
         </div>
@@ -197,70 +308,70 @@
 
     <footer>
         <div class="container">
-            <p class="smallprint">&copy; <span id="currentYear"></span> Buy Ryde. All rights reserved.<br/>
-			Map: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>
+            <p class="smallprint">&copy; <span id="currentYear"></span> Buy Ryde. All rights reserved.<br />
+                Map: &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors.</p>
         </div>
     </footer>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
-    
-<script>
-    window.addEventListener('load', function() {
-        baguetteBox.run('.gallery-grid', {
-            animation: 'fadeIn',
-            noScrollbars: true
-        });
- 
-        const hamburger = document.getElementById('hamburger');
-        const navMenu = document.getElementById('navMenu');
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
 
-        hamburger.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
-        });
+    <script>
+        window.addEventListener('load', function () {
+            baguetteBox.run('.gallery-grid', {
+                animation: 'fadeIn',
+                noScrollbars: true
+            });
 
-        // Close menu when a link is clicked (for better UX on mobile)
-        document.querySelectorAll('#navMenu a').forEach(link => {
-            link.addEventListener('click', () => {
-                if (navMenu.classList.contains('active')) {
-                    navMenu.classList.remove('active');
+            const hamburger = document.getElementById('hamburger');
+            const navMenu = document.getElementById('navMenu');
+
+            hamburger.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+
+            // Close menu when a link is clicked (for better UX on mobile)
+            document.querySelectorAll('#navMenu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    if (navMenu.classList.contains('active')) {
+                        navMenu.classList.remove('active');
+                    }
+                });
+            });
+
+            const backToTopButton = document.getElementById('backToTopBtn');
+
+            // When the user scrolls down 200px from the top, show the button
+            window.onscroll = function () {
+                if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                    backToTopButton.classList.add('show');
+                } else {
+                    backToTopButton.classList.remove('show');
                 }
+            };
+
+            // When the user clicks the button, scroll to the top of the document
+            backToTopButton.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Adds a smooth scrolling effect
+                });
             });
+            // --- END BACK TO TOP BUTTON LOGIC ---
         });
-		
-        const backToTopButton = document.getElementById('backToTopBtn');
-        
-        // When the user scrolls down 200px from the top, show the button
-        window.onscroll = function() {
-            if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-                backToTopButton.classList.add('show');
-            } else {
-                backToTopButton.classList.remove('show');
-            }
-        };
 
-        // When the user clicks the button, scroll to the top of the document
-        backToTopButton.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth' // Adds a smooth scrolling effect
-            });
-        });
-        // --- END BACK TO TOP BUTTON LOGIC ---
-    });
+        // Leaflet code: Get the map container div
+        var map = L.map('map').setView([50.729909, -1.162896], 17);
 
-	// Leaflet code: Get the map container div
-	var map = L.map('map').setView([50.729909, -1.162896], 17); 
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 22,
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
 
-	L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-		maxZoom: 22,
-		attribution: '© OpenStreetMap contributors'
-	}).addTo(map);
+        var marker = L.marker([50.729909, -1.162896]).addTo(map);
 
-	var marker = L.marker([50.729909, -1.162896]).addTo(map);
+        marker.bindPopup("<b><a href='https://www.openstreetmap.org/?#map=19/50.729909/-1.162896'>4 St Thomas' Square, Ryde PO33 2PJ.</a></b><br>Prime Ryde commercial property opportunity.");
 
-	marker.bindPopup("<b><a href='https://www.openstreetmap.org/?#map=19/50.729909/-1.162896'>4 St Thomas' Square, Ryde PO33 2PJ.</a></b><br>Prime Ryde commercial property opportunity.");
-	
-	// --- ADD CURRENT YEAR INJECTION HERE ---
+        // --- ADD CURRENT YEAR INJECTION HERE ---
         const yearSpan = document.getElementById('currentYear');
         if (yearSpan) {
             // Get the current date and extract the four-digit year
@@ -269,21 +380,14 @@
             yearSpan.textContent = currentYear;
         }
         // --- END CURRENT YEAR INJECTION ---
-</script>
+    </script>
 
-<script data-goatcounter="https://buyryde.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+    <script data-goatcounter="https://buyryde.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 
-<button id="backToTopBtn" class="top-btn" title="Go to top">
-    ↑
-</button>
+    <button id="backToTopBtn" class="top-btn" title="Go to top">
+        ↑
+    </button>
 
 </body>
+
 </html>
-
-
-
-
-
-
-
