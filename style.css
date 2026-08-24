@@ -1,3 +1,13 @@
+/* Variables */
+:root {
+  --primary: #2c3e50; /* Slate Blue */
+  --accent: #e67e22; /* Muted Orange */
+  --light: #d3d3d3;
+  --dark: #222;
+  --white: #fff;
+  --padding: 4rem 0;
+}
+
 /* Reset and Base Styles */
 * {
   box-sizing: border-box;
@@ -39,15 +49,7 @@ h2 {
   color: var(--primary);
 }
 
-/* Variables */
-:root {
-  --primary: #2c3e50; /* Slate Blue */
-  --accent: #e67e22; /* Muted Orange */
-  --light: #f4f4f4;
-  --dark: #222;
-  --white: #fff;
-  --padding: 4rem 0;
-}
+
 
 /* Layout Utilities */
 .container {
@@ -117,7 +119,7 @@ h2 {
   height: 70vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("images/Level-Ryde-11.JPG");
+    url("images/ward-house-01.jpg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -334,7 +336,7 @@ th {
 
 .smallprint {
   font-size: 9px;
-  color: --light;
+  color: var(--dark);
 }
 
 .visually-hidden {
@@ -355,6 +357,14 @@ th {
   .hero h1 {
     font-size: 2rem;
   }
+  .hero h2 {
+    font-size: 1.2rem;
+  }
+
+    .hero p {
+    font-size: 1rem;
+  }
+
   .hero {
     height: 60vh;
   }
