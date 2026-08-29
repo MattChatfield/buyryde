@@ -6,6 +6,7 @@
   --dark: #222;
   --white: #fff;
   --padding: 4rem 0;
+  --header-offset: 72px;
 }
 
 /* Reset and Base Styles */
@@ -48,8 +49,6 @@ h2 {
   font-weight: 900; /* Stronger logo */
   color: var(--primary);
 }
-
-
 
 /* Layout Utilities */
 .container {
@@ -245,6 +244,15 @@ th {
 #map {
   height: 400px;
   width: 100%;
+  position: relative;
+}
+
+#map .leaflet-top {
+  top: var(--header-offset);
+}
+
+#map .leaflet-control-zoom {
+  margin-top: 0;
 }
 
 /* Contact Section */
@@ -361,7 +369,7 @@ th {
     font-size: 1.2rem;
   }
 
-    .hero p {
+  .hero p {
     font-size: 1rem;
   }
 
